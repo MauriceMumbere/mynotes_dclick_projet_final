@@ -40,12 +40,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 "Connexion au compte",
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.w700),
               ),
-
               SizedBox(height: 30),
-
               // email
               TextFormField(
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset("assets/images/email.png"),
                   hintText: "Email",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
@@ -66,13 +65,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   return null;
                 },
               ),
-
               SizedBox(height: 10),
-
               // password
               TextFormField(
                 obscureText: true,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset("assets/images/password.png"),
                   hintText: "Mot de passe",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
@@ -86,9 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   return null;
                 },
               ),
-
               SizedBox(height: 30),
-
               // submit button
               UiHelper.customButton(
                 callback: () async {
@@ -122,13 +118,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 },
                 buttonName: 'Se connecter',
               ),
-
               SizedBox(height: 8),
-
               Text("Ou", style: TextStyle(fontSize: 20)),
-
               SizedBox(height: 8),
-
               GestureDetector(
                 onTap: () {
                   Navigator.push(

@@ -45,6 +45,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               // email
               TextFormField(
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset("assets/images/email.png"),
                   hintText: "Email",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
@@ -72,6 +73,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               TextFormField(
                 obscureText: true,
                 decoration: InputDecoration(
+                  prefixIcon: Image.asset("assets/images/password.png"),
                   hintText: "Mot de passe",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),

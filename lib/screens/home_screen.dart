@@ -1,4 +1,3 @@
-// Importez les classes nécessaires
 import 'package:flutter/material.dart';
 import 'package:mynotes_dclick_projet_final/screens/edit_screen.dart';
 import 'package:mynotes_dclick_projet_final/widgets/uihelper.dart';
@@ -56,7 +55,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontSize: 48,
                     fontWeight: FontWeight.w700,
                   ),
-
                   IconButton(
                     icon: Icon(Icons.logout),
                     onPressed: () async {
@@ -70,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           actions: [
                             TextButton(
                               onPressed: () {
-                                Navigator.pop(context); // Ferme la pop-up
+                                Navigator.pop(context);
                               },
                               child: const Text("Annuler"),
                             ),

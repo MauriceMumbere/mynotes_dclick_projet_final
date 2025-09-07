@@ -34,7 +34,6 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
     super.dispose();
   }
 
-  // Logique pour mettre à jour la note
   void _updateNote() async {
     if (_formKey.currentState!.validate()) {
       final updatedNote = Notes(
@@ -45,7 +44,6 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
 
       await DBNotes.updateNotes(updatedNote);
 
-      // Affichez une confirmation et revenez en arrière
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text("Note mise à jour avec succès!")),
       );
@@ -80,9 +78,7 @@ class _EditNoteScreenState extends State<EditNoteScreen> {
                     return null;
                   },
                 ),
-
                 SizedBox(height: 20),
-
                 // Contenu
                 SizedBox(
                   height: 240,
