@@ -25,7 +25,7 @@ Suivez ces étapes pour lancer l'application sur votre machine :
 1.  **Clonez le dépôt :**
 
     ```bash
-    git clone [https://github.com/ton-utilisateur/mynotes.git](https://github.com/ton-utilisateur/mynotes.git)
+    git clone https://github.com/MauriceMumbere/mynotes_dclick_projet_final.git
     cd mynotes
     ```
 
